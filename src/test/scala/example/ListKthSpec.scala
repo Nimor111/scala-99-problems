@@ -14,4 +14,8 @@ class ListKthSpec extends FlatSpec with Matchers {
   it should "return None on empty List" in {
     ListKth.kth(5, List()) shouldEqual None
   }
+
+  it should "work on different types too" in {
+    ListKth.kth(1, List("test", "testing")) shouldEqual Some("testing")
+  }
 }

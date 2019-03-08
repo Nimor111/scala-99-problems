@@ -11,4 +11,8 @@ class ListLastButOneSpec extends FlatSpec with Matchers {
     ListLastButOne.lastButOne(List()) shouldEqual None
     ListLastButOne.lastButOne(List(1)) shouldEqual None
   }
+
+  it should "work on different types too" in {
+    ListLastButOne.lastButOne(List("test", "testing")) shouldEqual Some("test")
+  }
 }

@@ -10,4 +10,8 @@ class ListLastSpec extends FlatSpec with Matchers {
   it should "return None on empty list" in {
     ListLast.last(List()) shouldEqual None
   }
+
+  it should "work on different types too" in {
+    ListLast.last(List("test", "testing")) shouldEqual Some("testing")
+  }
 }
