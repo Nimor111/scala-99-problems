@@ -3,7 +3,8 @@ package problems
 import scala.annotation.tailrec
 
 object ListKth {
-  @tailrec def kth[T](k: Int, list: List[T]): Option[T] = {
+  @tailrec
+  def kth[T](k: Int, list: List[T]): Option[T] = {
     if (list.length == 0) {
       return None
     }

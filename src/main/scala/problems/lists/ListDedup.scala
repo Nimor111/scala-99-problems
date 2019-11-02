@@ -1,7 +1,5 @@
 package problems
 
-import scala.annotation.tailrec
-
 object ListDedup {
   def dedup[T](xs: List[T]): List[T] = xs match {
     case Nil => Nil
